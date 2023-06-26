@@ -385,6 +385,35 @@ h1, h2, h3, p, li, ul {
     font-size: 16px;
     letter-spacing: 0.02em;
     text-align: center; 
+    margin-bottom: 8px;
+}
+
+
+.team-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: var(--primary-brand-iris);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.team-icon-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.team-icon-list :hover,
+.team-icon-list :focus {
+    background-color: var(--pressed-state-ocean); 
+}
+.team-icon :hover,
+.team-icon :focus {
+    background-color: var(--pressed-state-ocean);
 }
 
 .footer-section {
