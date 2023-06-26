@@ -147,11 +147,15 @@ h1, h2, h3, p, li, ul {
 }
 
 
-.header-link:hover {
+.header-link:hover  {
     color: var(--pressed-state-ocean);
 }
 .header-link:focus {
     color: var(--pressed-state-ocean);
+}
+
+.header-link:active {
+    color: var(--pressed-state-ocean);  
 }
 
 .contact {
@@ -179,25 +183,19 @@ h1, h2, h3, p, li, ul {
 }
 
 .hero-image{
+    max-width: 1440px;
+    background-color: var(--dark-navy-blue);
     padding: 188px 0 188px;
     margin-right: 0;
-    background-image: url("../images/people-office.jpg");
+    background-image: url("../images/people-office.jpg"); 
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), 
+    url("../images/people-office.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    
-    background-image: linear-gradient(to bottom, rgba(46, 47, 66, 0.70)), url("../images/Dark-bg.jpg");
-    background-position: center;
-    background-size: cover;
-
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     border: 1px solid #000;
-    
-
-
-
-    
-}
+    }
 
 .main-header {
     color: var(--white-background);
@@ -260,6 +258,17 @@ h1, h2, h3, p, li, ul {
     overflow: hidden;
   }
 
+.feature-icons {
+    width: 264px;
+    height: 112px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background-color: var(--light-cloud);
+}
+.icon {
+  
+} 
+
 .feature-list {
     display: flex;
     gap: 24px;
@@ -283,6 +292,7 @@ h1, h2, h3, p, li, ul {
     letter-spacing: 0.02em;
     color: var(--dark-navy-blue);
     margin-bottom: 8px;
+    margin-top: 8px;
 }
 
 .feature-description {
@@ -347,9 +357,8 @@ h1, h2, h3, p, li, ul {
     flex-basis: calc((100% - 72px) / 4);
     color: var(--dark-navy-blue);
     background-color: var(--white-background);
-    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
     border-radius: 0px 0px 4px 4px;
-    
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .team-card-detail {
