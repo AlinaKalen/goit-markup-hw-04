@@ -402,9 +402,8 @@ h1, h2, h3, p, li, ul {
 }
 .team-icon-list {
     display: flex;
-    justify-content: center;
-    align-items: center;
     gap: 24px;
+    
 }
 
 .team-icon-list :hover,
@@ -414,6 +413,44 @@ h1, h2, h3, p, li, ul {
 .team-icon :hover,
 .team-icon :focus {
     background-color: var(--pressed-state-ocean);
+}
+
+.customer-header{
+    font-size: 36px;
+    font-family: Roboto;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.72px;
+    text-transform: capitalize;
+    text-align: center;
+    color: var(--navy-blue-modal-overlay);
+    margin-bottom: 72px;
+}
+.customer-section {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 24px;
+
+}
+
+.customer-li {
+    width: 168px;
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid var(--subtle-text-light-slate);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.customer-section :hover,
+.customer-section :focus {
+    color: var(--pressed-state-ocean);
+}
+.customer-li :hover,
+.customer-li :focus {
+    color: var(--pressed-state-ocean);
 }
 
 .footer-section {
@@ -426,7 +463,41 @@ h1, h2, h3, p, li, ul {
     line-height: 1.5;
     max-width: 264px;
 }
+.footer-icon-header {
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 24px;
+    letter-spacing: 0.32px;
+    color: var(--white-background);
+    margin-left: 540px;
 
+}
+
+.team-icon-footer {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    background-color: var(--primary-brand-iris);
+    border-radius: 50px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+.team-icon-li {
+    padding-left: 540px;
+    gap: 16px;
+    display: inline-flex;
+}
+
+.team-icon-li :hover,
+.team-icon-li:focus {
+    background-color: var(--success-green); 
+}
+.team-icon-footer :hover,
+.team-icon-footer :focus {
+    background-color: var(--success-green);
+}
     
 
 /* Portfolio*/
