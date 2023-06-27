@@ -41,6 +41,7 @@ ul {
     height: 72px;
     left: 0px;
     top: 0px;
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 
@@ -144,8 +145,20 @@ h1, h2, h3, p, li, ul {
     font-weight: 500;
     line-height: 1.5;
     padding: 24px 0;
+    position: relative;
 }
 
+
+.header-link::after {
+    content: '' ;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    height: 4px;
+    background-color: var(--pressed-state-ocean);
+    border-radius: 2px; 
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .header-link:hover  {
     color: var(--pressed-state-ocean);
@@ -162,6 +175,7 @@ h1, h2, h3, p, li, ul {
     color: var(--text-slate);
     font-size: 16px;
     line-height: 1.5;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 
@@ -223,8 +237,10 @@ h1, h2, h3, p, li, ul {
     min-width: 169px;
     border: none;
     margin: 0 auto;
-
+    transition: var(--pressed-state-ocean) 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 .main-button:hover {
     background-color: var(--pressed-state-ocean);
 }
@@ -258,6 +274,13 @@ h1, h2, h3, p, li, ul {
     overflow: hidden;
   }
 
+.container-feature { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+ }
+
 .feature-icons {
     width: 264px;
     height: 112px;
@@ -265,9 +288,7 @@ h1, h2, h3, p, li, ul {
     border-radius: 4px;
     background-color: var(--light-cloud);
 }
-.icon {
-  
-} 
+
 
 .feature-list {
     display: flex;
@@ -326,6 +347,9 @@ h1, h2, h3, p, li, ul {
     margin-top: 0;
 }
 
+.team-containe {
+    padding: 32px 0;
+}
 
 .team-card-section {
     background-color: var(--light-cloud); 
@@ -390,20 +414,28 @@ h1, h2, h3, p, li, ul {
 
 
 .team-icon {
-    width: 40px;
-    height: 40px;
-    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
     background-color: var(--primary-brand-iris);
     border-radius: 50px;
     justify-content: center;
     align-items: center;
     display: flex;
     
+    
 }
 .team-icon-list {
     display: flex;
     gap: 24px;
+    justify-content: center;
     
+}
+.team-icon-prop {
+    width: 40px;
+    height: 40px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    padding: 0;
+
 }
 
 .team-icon-list :hover,
@@ -419,7 +451,7 @@ h1, h2, h3, p, li, ul {
     font-size: 36px;
     font-family: Roboto;
     font-weight: 700;
-    line-height: 40px;
+    line-height: 1.11;
     letter-spacing: 0.72px;
     text-transform: capitalize;
     text-align: center;
@@ -435,7 +467,7 @@ h1, h2, h3, p, li, ul {
 }
 
 .customer-li {
-    width: 168px;
+    width: calc((100% - 120px) / 6);
     height: 88px;
     border-radius: 4px;
     border: 1px solid var(--subtle-text-light-slate);
