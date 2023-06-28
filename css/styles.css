@@ -546,7 +546,6 @@ h1, h2, h3, p, li, ul {
 }
 
 .team-icon-li {
-    
     gap: 16px;
     display: flex;
 }
@@ -610,12 +609,12 @@ fill: var(--light-cloud);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal :hover {
+.modal:hover {
     background-color: var(--pressed-state-ocean);
     border: none;  
 }
 
-.modal :focus {
+.modal:focus {
     background-color: var(--pressed-state-ocean);
     border: none; 
 }
@@ -624,12 +623,11 @@ fill: var(--light-cloud);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.close-icon :hover {
+.modal-button:hover .close-icon,
+.modal-button:focus .close-icon {
     fill:  var(--white-background); 
 }
-.close-icon:focus {
-    fill:  var(--white-background);
-}
+
 
 /* Portfolio*/
 
