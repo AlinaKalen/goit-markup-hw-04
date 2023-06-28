@@ -512,6 +512,7 @@ h1, h2, h3, p, li, ul {
     max-width: 264px;
 }
 .footer-icon-p {
+    font-weight: 500;
     font-size: 16px;
     font-family: Roboto;
     line-height: 24px;
@@ -667,6 +668,7 @@ h1, h2, h3, p, li, ul {
 .project-card {
     box-sizing: border-box;
     width: calc((100% - 48px) / 3);
+   
 }
 
 .project-header {
@@ -691,6 +693,37 @@ h1, h2, h3, p, li, ul {
     border-top: none;
     border: 1px solid var(--accent-cornflower);
     border-top: none;
-    
+
 }
+
+.project-card :hover,
+.project-card :focus {
+    border: 1px solid var(--light-cloud);
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);  
+}
+
+.box-project {
+    position: relative;
+    overflow: hidden;
+
+}
+
+.overlay {
+    color: var(--light-cloud);
+    font-size: 16px;
+    font-family: Roboto;
+    line-height: 1.5;
+    letter-spacing: 0.32px;
+    background-color: var(--primary-brand-iris);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform 250ms ease-in-out;
+    transform: translateY(100%);
+}
+.box-project:hover .overlay {
+    transform: translateY(0);
+  }
 
