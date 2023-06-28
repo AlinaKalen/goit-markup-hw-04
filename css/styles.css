@@ -419,6 +419,7 @@ h1, h2, h3, p, li, ul {
     justify-content: center;
     align-items: center;
     display: flex;   
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .network-icon{
@@ -553,7 +554,7 @@ h1, h2, h3, p, li, ul {
     background-color: var(--success-green); 
 }
 
-.team-icon-li:focus {
+.icon-footer :focus {
     background-color: var(--success-green); 
 }
 .footer-link :hover {
@@ -612,18 +613,18 @@ fill: var(--light-cloud);
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal-button :hover {
+.modal :hover {
     background-color: var(--pressed-state-ocean);
     border: none;  
 }
 
-.modal-button :focus {
+.modal :focus {
     background-color: var(--pressed-state-ocean);
     border: none; 
 }
+
 .close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
-
 }
 
 .close-icon :hover {
