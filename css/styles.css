@@ -146,6 +146,7 @@ h1, h2, h3, p, li, ul {
     line-height: 1.5;
     padding: 24px 0;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .header-active {
@@ -512,6 +513,11 @@ h1, h2, h3, p, li, ul {
     max-width: 264px;
     margin-bottom: 16px;
 }
+
+.social-box{
+
+
+}
 .footer-icon-p {
     font-weight: 500;
     font-size: 16px;
@@ -519,7 +525,6 @@ h1, h2, h3, p, li, ul {
     line-height: 24px;
     letter-spacing: 0.32px;
     color: var(--white-background);
-    margin-left: 540px;
     margin-bottom: 16px;
 
 }
@@ -541,7 +546,7 @@ h1, h2, h3, p, li, ul {
 }
 
 .team-icon-li {
-    padding-left: 540px;
+    
     gap: 16px;
     display: flex;
 }
@@ -619,10 +624,10 @@ fill: var(--light-cloud);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.close-icon:hover {
+.close-icon :hover {
     fill:  var(--white-background); 
 }
-.close-icon :focus {
+.close-icon:focus {
     fill:  var(--white-background);
 }
 
