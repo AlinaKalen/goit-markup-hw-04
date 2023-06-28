@@ -149,6 +149,7 @@ h1, h2, h3, p, li, ul {
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     color: var(--pressed-state-ocean);
     
+    
 }
 
 
@@ -562,7 +563,12 @@ h1, h2, h3, p, li, ul {
 .footer-link :focus {
     background-color: var(--success-green);
 }
-   
+.icon-footer {
+fill: var(--light-cloud);
+}   
+
+/*Modal window*/
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -606,7 +612,11 @@ h1, h2, h3, p, li, ul {
     cursor: pointer;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.modal-button :hover, 
+.modal-button :hover {
+    background-color: var(--pressed-state-ocean);
+    border: none;  
+}
+
 .modal-button :focus {
     background-color: var(--pressed-state-ocean);
     border: none; 
