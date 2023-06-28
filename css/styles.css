@@ -590,7 +590,7 @@ h1, h2, h3, p, li, ul {
     border-radius: 50%;
     display: flex;
     align-items: center; 
-    align-items: center; 
+    justify-content: center;
     background-color: var(--accent-cornflower);
     border: 1px solid rgba(0, 0, 0, 0.1); 
     padding: 0;
@@ -604,6 +604,7 @@ h1, h2, h3, p, li, ul {
 }
 .close-icon {
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+
 }
 
 /* Portfolio*/
