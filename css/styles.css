@@ -146,6 +146,8 @@ h1, h2, h3, p, li, ul {
     line-height: 1.5;
     padding: 24px 0;
     position: relative;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    color: var(--pressed-state-ocean);
     
 }
 
@@ -157,9 +159,9 @@ h1, h2, h3, p, li, ul {
     width: 100%;
     bottom: -1px;
     height: 4px;
-    background-color: var(--white-background);
+    background-color: var(--pressed-state-ocean);
     border-radius: 2px; 
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
 }
 
 .header-link:hover,
@@ -510,6 +512,7 @@ h1, h2, h3, p, li, ul {
     color: var(--light-cloud);
     line-height: 1.5;
     max-width: 264px;
+    margin-bottom: 16px;
 }
 .footer-icon-p {
     font-weight: 500;
@@ -545,11 +548,17 @@ h1, h2, h3, p, li, ul {
     display: flex;
 }
 
-.team-icon-li :hover,
+.team-icon-li :hover {
+    background-color: var(--success-green); 
+}
+
 .team-icon-li:focus {
     background-color: var(--success-green); 
 }
-.footer-link :hover,
+.footer-link :hover {
+    background-color: var(--success-green);
+}
+
 .footer-link :focus {
     background-color: var(--success-green);
 }
@@ -607,7 +616,9 @@ h1, h2, h3, p, li, ul {
 
 }
 
-.close-icon :hover,
+.close-icon :hover {
+    fill:  var(--white-background); 
+}
 .close-icon :focus {
     fill:  var(--white-background);
 }
